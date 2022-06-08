@@ -13,11 +13,30 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: #025159;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
         }
 
         thead, tfoot {
-            background-color: rgb(2, 2, 133);
+            background-color: #3F858C;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #3F858C;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: #7AB8BF;
         }
         
         td, th {
@@ -38,6 +57,9 @@
     <h1>Uso de tabelas grandes</h1>
     
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
                 <th>Estado</th>
