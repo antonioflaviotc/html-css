@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dallas Mavericks</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="players">
+            <ul>
+                <li><a href="#">Luka Doncic</a></li>
+                <li><a href="#">Kyrie Irving</a></li>
+                <li><a href="#">Derrik Jones Jr.</a></li>
+                <li><a href="#">P.J. Washington</a></li>
+                <li><a href="#">Dereck Lively II</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ut laborum sint, aperiam perspiciatis, totam possimus eius dicta corrupti error nostrum placeat eligendi id. Maxime nulla dolorum magni harum iste.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, adipisci eveniet! Earum consequuntur tempora ipsa sequi sunt. Iusto corrupti obcaecati dolorem. Illo nisi ut eius autem et eum quasi nulla!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda culpa ea at corporis ut eos tempore minima exercitationem nesciunt, eligendi consectetur distinctio iure recusandae sed, sequi consequuntur quis natus!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (players.style.display == 'block') {
+                players.style.display = 'none'
+            } else {
+                players.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
